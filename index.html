@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вязайка — вяжу не на заказ, вяжу для настроения</title>
+  <meta name="description"
+    content="Вязайка — авторские вязаные вещи ручной работы. Одежда, аксессуары и игрушки в единственном экземпляре. Каждая вещь уже готова и ищет своего человека.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="siteHeader">
+    <div class="header__center">
+      <nav class="header__nav header__nav--left">
+        <a href="#gallery" class="header__link">Изделия</a>
+        <a href="#manifesto" class="header__link">Философия</a>
+      </nav>
+
+      <a href="#hero" class="header__logo">
+        <img src="images/logo/vyazaika-logo.svg" alt="Вязайка — навяжу что угодно">
+      </a>
+
+      <nav class="header__nav header__nav--right">
+        <a href="#how" class="header__link">Процесс</a>
+        <a href="#about" class="header__link">Обо мне</a>
+      </nav>
+    </div>
+
+    <div class="header__right">
+      <a href="#contact" class="btn btn-primary header__cta">Связаться</a>
+
+      <button type="button" class="header__burger" id="burgerBtn" aria-label="Открыть меню">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button type="button" class="mobile-menu__close" id="mobileMenuClose" aria-label="Закрыть меню">×</button>
+    <a href="#gallery" class="mobile-menu__link">Изделия</a>
+    <a href="#manifesto" class="mobile-menu__link">Философия</a>
+    <a href="#how" class="mobile-menu__link">Процесс</a>
+    <a href="#about" class="mobile-menu__link">Обо мне</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img src="images/hero/pexels-olga-volkovitskaia-131638009-27979356.jpg"
+          alt="Корзина с клубками пряжи и деревянными спицами">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__top container"></div>
+
+      <div class="hero__content container">
+        <div class="hero__inner" data-reveal>
+          <span class="hero__tag">Ручная работа · единственный экземпляр</span>
+          <h1 class="hero__title hero__title--yarn">
+            <img src="img/hero-title2.png" alt="Вяжу не на заказ. Вяжу для настроения.">
+          </h1>
+          <p class="hero__sub">А иногда настроение находит себе новый дом</p>
+          <div class="hero__actions">
+            <a href="#gallery" class="btn btn-primary">Смотреть работы</a>
+            <a href="#contact" class="btn btn-outline">Написать</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__marquee">
+        <div class="hero__marquee-track">
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+          <span>вяжется</span><span>·</span><span>вдохновляется</span><span>·</span><span>находит
+            дом</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO — фиксированный фон, контент скроллится поверх -->
+    <section class="pinned manifesto-pinned" id="manifesto">
+      <div class="pinned__bg" style="background-image:url('images/sections/manifesto4.png');"></div>
+      <div class="pinned__overlay"></div>
+
+      <div class="pinned__content container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow eyebrow--light">Философия</span>
+        </div>
+        <blockquote class="manifesto__quote" data-reveal>
+          Вязание на заказ обошло меня стороной — оказалось, что я и заказчик видим итог по-разному, даже если всё
+          оговорено заранее.
+        </blockquote>
+        <p class="manifesto__text" data-reveal>
+          Поэтому я вяжу иначе: для себя, для настроения, в формате медитации. А когда работа заканчивается — хочется
+          похвастаться.
+          <br><br>
+          Иногда похвастаться — значит найти вещи новый дом. Так мои проекты становятся доступны тем, кто разделит мою
+          радость обладания ими.
+        </p>
+      </div>
+    </section>
+    <!-- ABOUT — фото + бегущая строка поверх фото (приём с lavkabulavka) -->
+    <section class="section about" id="about">
+      <img class="how__bg1" src="/images/icons/icon-instagram.png" alt="">
+      <img class="how__bg2" src="/images/icons/icon-facebook.png" alt="">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Обо мне</span>
+          <h2 class="section-title">Тараканы, изюминки, <em>закидоны и капризы</em></h2>
+          <p class="section-lead">
+            Вяжу с 8 лет. С перерывами лет по 10 — то спицы в руках, то их нет вовсе. <br>
+            Вязание для меня это не  работа, это хобби, переросшее во что то большее. В целый мир, который принимает меня со всеми моими тараканами и изюминками, закидонами и капризами.
+            <br>И со своими историями
+          </p>
+        </div>
+
+        <div class="about__socials">
+          <a href="https://www.instagram.com/aclan2003md" target="_blank" rel="noopener"
+            class="about__social">Instagram</a>
+          <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener" class="about__social">Facebook</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY 1 — Фиби -->
+    <section class="story" id="story-phoebe">
+      <div class="story__media story__media--1" data-reveal>
+        <img src="images/sections/story-phoebe-cat.jpg" alt="Белая турецкая ангора с голубыми глазами у окна">
+        <span class="story__index">01</span>
+      </div>
+      <div class="story__body">
+        <div class="story__body-inner" data-reveal>
+          <span class="eyebrow">История</span>
+          <h3 class="story__title">Фиби</h3>
+          <div class="story__text">
+            <p>Некоторое время назад возникла необходимость посетить ЖЭУ. Там, помимо штатных работников, я увидела
+              шикарную кошку, породы турецкая ангора. Она была улично белого цвета. Знаете, это такой теоретически
+              белоснежный, но практически землисто серый. Она подбегала к каждому новоприбывшему, становилась рядом с
+              ногой, как выдрессированная собака. И подняв мордочку вверх искала глазами глаза человека.</p>
+            <p>Встретившись с ней глазами я пропала. Это был гипноз в чистом виде. Она не моргала, она не мяукала, она
+              не просила ничего. Она просто мурчала, и мои руки сами потянулись её гладить. Прикосновения доставляли
+              кайф, несмотря на цвет шерсти. Оказалось что кошечка появилась недавно, ниоткуда. И значит она ничья.</p>
+            <p>Я честно искала её прежних хозяев. Волонтёр, увидевшая мои посты в интернете вызвалась помочь. Она
+              предложила стерилизацию, чтоб облегчить последующее пристройство. Но после операции нужно было место, где
+              кошечка сможет отлежаться. Я согласилась приютить на пару дней, пока ей станет легче.</p>
+            <p>Параллельно продолжала искать хозяев.</p>
+            <p class="story__beat">Нашла!</p>
+            <p>Теперь у Фиби (такое имя мне пришло в голову, когда я думала о ней) есть дом, и хозяйка. Это я!</p>
+            <p class="story__beat">Я забочусь о ней.<br>Она заботится обо мне.</p>
+            <p>Самое интересное, она понимает всё что я ей говорю. А я стараюсь научиться понимать её язык. Надеюсь
+              получится!</p>
+            <p>И да, она теперь белоснежная, сверкающая (так переводится Фиби) не только теоретически, но и практически!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY 2 — Будапешт -->
+    <section class="story story--reverse" id="story-budapest">
+      <div class="story__media" data-reveal>
+        <img src="images/sections/story-budapest-parliament.jpg" alt="Здание Парламента и Дунай в Будапеште на закате">
+        <span class="story__index">02</span>
+      </div>
+      <div class="story__body">
+        <div class="story__body-inner" data-reveal>
+          <span class="eyebrow">История</span>
+          <h3 class="story__title">Будапешт</h3>
+          <div class="story__text">
+            <p>Случилось мне побывать в Будапеште. Дочь подарила эту поездку. Она же заказала ознакомительную экскурсию
+              по городу. Только для нас двоих.</p>
+            <p>Гид, которая была с нами, оказалась украинкой, которая не только смогла выучить язык и получить лицензию
+              гида, но ещё и рассказывала неординарные истории, и показывала некоторые скрытые от обычных туристов
+              артефакты.</p>
+            <p>Очень понравилась история создания маленькой фигурки «шапки-ушанки». Ушанка на лягушачьих лапках, сидящая
+              на ступеньках спуска к Дунаю, прямо перед Парламентом.</p>
+            <p class="story__beat">Символично.</p>
+            <p>Ещё медные таблички с именами, вместо тротуарной плитки, у входа в дома, подъезды. Это международный
+              проект.</p>
+            <p class="story__beat">Грустно.</p>
+            <p>А ещё мы с дочкой отметили что в Будапеште много, очень много вьетнамских ресторанов. Буквально на каждом
+              шагу.</p>
+            <p>Из-за того что питались мы только в них, я как будто побывала в двух странах одновременно)</p>
+            <p>Вот такой опыт путешествий я приобрела.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <img class="how__bg1" src="/images/icons/icon-telegram.png" alt="">
+      <img class="how__bg2" src="/images/icons/icon-viber.png" alt="">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Как это работает</span>
+          <h2 class="section-title">Никаких <em>заказов.</em><br>Только готовые истории.</h2>
+        </div>
+
+        <div class="how__timeline">
+          <!-- <div class="how__line"><div class="how__line-fill" id="howLineFill"></div></div> -->
+
+          <div class="how__steps">
+            <div class="how__step" data-reveal>
+              <span class="how__num">01</span>
+              <h3 class="how__title">Смотришь галерею</h3>
+              <p class="how__text">Все работы уже готовы, ничего не делается «на заказ»</p>
+            </div>
+
+            <div class="how__step" data-reveal>
+              <span class="how__num">02</span>
+              <h3 class="how__title">Пишешь, если влюбилась</h3>
+              <p class="how__text">Viber, Telegram или WhatsApp — как удобнее</p>
+            </div>
+            <div class="how__step" data-reveal>
+              <span class="how__num">03</span>
+              <h3 class="how__title">Договариваемся</h3>
+              <p class="how__text">Цена и детали обсуждаются лично — у каждой вещи своя история и своя ценность</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY (реальные фото клиентки) -->
+    <section class="section knit-texture" id="gallery">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Коллекция</span>
+          <h2 class="section-title">Каждая вещь <em>уже нашла форму.</em><br>Некоторые ищут дом.</h2>
+          <p class="section-lead">Ничего не вяжется на заказ — только то, что уже сложилось. Понравилось — пиши,
+            обсудим.</p>
+        </div>
+
+        <div class="gallery__filters" id="galleryFilters">
+          <button type="button" class="gallery__filter is-active" data-filter="all">Всё</button>
+          <button type="button" class="gallery__filter" data-filter="odezhda">Одежда</button>
+          <button type="button" class="gallery__filter" data-filter="aksessuar">Аксессуары</button>
+          <button type="button" class="gallery__filter" data-filter="igrushka">Игрушки</button>
+        </div>
+
+        <div class="gallery__grid" id="galleryGrid" data-reveal-group>
+
+          <article class="gallery-card" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-plate-izumrud.jpg" alt="Зелёное вязаное платье-свитер косами"
+                loading="lazy">
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Платье «Изумрудный вечер»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="aksessuar">
+            <div class="gallery-card__media">
+              <img src="images/gallery/aksessuar-ryukzak.jpg" alt="Вязаный рюкзак бежево-серый" loading="lazy">
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Рюкзак «Ягодная поляна»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-kofta-sinyaya.jpg" alt="Синяя ажурная вязаная кофта" loading="lazy">
+              <span class="gallery-card__badge" data-status="taken">Нашла свой дом</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Кофта «Васильковый сад»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="igrushka">
+            <div class="gallery-card__media">
+              <img src="images/gallery/igrushka-loshadki.jpg" alt="Вязаные игрушки-лошадки, набор" loading="lazy">
+              <span class="gallery-card__badge" data-status="taken">Нашли свой дом</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Табун лошадок</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о них →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-zhilet-bordo.jpg" alt="Бордовый вязаный жилет с поясом" loading="lazy">
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Жилет «Бордовое настроение»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="aksessuar">
+            <div class="gallery-card__media">
+              <img src="images/gallery/aksessuar-sumka-biryuza.jpg" alt="Бирюзовая сумка-торба с вышивкой"
+                loading="lazy">
+              <span class="gallery-card__badge" data-status="taken">Нашла свой дом</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Сумка «Одуванчиковое лето»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-kardigan-limon2.jpg" alt="Салатовый ажурный кардиган" loading="lazy">
+              <video class="gallery-card__video" src="videos/kardigan-limon.mp4" muted loop playsinline
+                preload="none"></video>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Кардиган «Лаймовый бриз»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="igrushka">
+            <div class="gallery-card__media">
+              <img src="images/gallery/igrushka-yagnenok.jpg" alt="Вязаная игрушка лошадка в попоне" loading="lazy">
+              <video class="gallery-card__video" src="videos/igrushka-loshadki2.mp4" muted loop playsinline
+                preload="none"></video>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Лошадка в попоне</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-nakidka-rozovaya.jpg" alt="Розовая вязаная накидка" loading="lazy">
+              <span class="gallery-card__badge" data-status="taken">Нашла свой дом</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Накидка «Розовый закат»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="aksessuar">
+            <div class="gallery-card__media">
+              <img src="images/gallery/aksessuar-shal-belaya.jpg" alt="Белая ажурная вязаная косынка-шаль"
+                loading="lazy">
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Шаль «Кружевная тишина»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-bolero-rozovoe.jpg" alt="Розовое ажурное болеро" loading="lazy">
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Болеро «Нежность»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="aksessuar">
+            <div class="gallery-card__media">
+              <img src="images/gallery/aksessuar-noski.jpg" alt="Вязаные носки зелёно-жёлтые" loading="lazy">
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Носки «Лесная прогулка»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о них →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-plate-bezhevoe.jpg" alt="Бежевое длинное вязаное платье" loading="lazy">
+              <span class="gallery-card__badge" data-status="taken">Нашла свой дом</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Платье «Карамельный уют»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-kofta-trehtsvet.jpg" alt="Трёхцветная вязаная кофта" loading="lazy">
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Кофта «Три настроения»</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+      
+    </section>
+    <div class="hero__marquee">
+      <div class="hero__marquee-track">
+        <span>Изумрудный вечер</span><span>·</span><span>Ягодная поляна</span><span>·</span><span>Васильковый сад</span><span>·</span>
+        <span>Табун лошадок</span><span>·</span><span>Бордовое настроение</span><span>·</span><span>Одуванчиковое лето</span><span>·</span>
+        <span>Лаймовый бриз</span><span>·</span><span>Лошадка в попоне</span><span>·</span><span>Розовый закат</span><span>·</span>
+        <span>Кружевная тишина</span><span>·</span><span>Нежность</span><span>·</span><span>Лесная прогулка</span><span>·</span>
+        <span>Карамельный уют</span><span>·</span><span>Три настроения</span><span>·</span>
+        <span>Изумрудный вечер</span><span>·</span><span>Ягодная поляна</span><span>·</span><span>Васильковый сад</span><span>·</span>
+        <span>Табун лошадок</span><span>·</span><span>Бордовое настроение</span><span>·</span><span>Одуванчиковое лето</span><span>·</span>
+        <span>Лаймовый бриз</span><span>·</span><span>Лошадка в попоне</span><span>·</span><span>Розовый закат</span><span>·</span>
+        <span>Кружевная тишина</span><span>·</span><span>Нежность</span><span>·</span><span>Лесная прогулка</span><span>·</span>
+        <span>Карамельный уют</span><span>·</span><span>Три настроения</span><span>·</span>
+        
+      </div>
+    </div>
+    
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner" data-reveal>
+        <span class="eyebrow eyebrow--light">Как связаться</span>
+        <h2 class="contact__title">Понравилась вещь?<br><em>Не стесняйся, пиши.</em></h2>
+        <p class="contact__sub">Не обещаю быстрый ответ, обещаю тёплый.</p>
+
+        <div class="contact__icons">
+          <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener" class="contact__icon" aria-label="Facebook">
+            <img src="images/icons/icon-facebook.png" alt="Facebook" loading="lazy">
+          </a>
+          <a href="https://www.instagram.com/aclan2003md" target="_blank" rel="noopener" class="contact__icon" aria-label="Instagram">
+            <img src="images/icons/icon-instagram.png" alt="Instagram" loading="lazy">
+          </a>
+          <a href="https://t.me/zaiteva_angela" target="_blank" rel="noopener" class="contact__icon" aria-label="Telegram">
+            <img src="images/icons/icon-telegram.png" alt="Telegram" loading="lazy">
+          </a>
+          <a href="viber://chat?number=37379553112" class="contact__icon" aria-label="Viber">
+            <img src="images/icons/icon-viber.png" alt="Viber" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+  </main>
+
+  <!-- MATERIALS MARQUEE -->
+  <div class="materials-marquee">
+    <div class="materials-marquee__track">
+      <span>шерсть</span><span>◆</span><span>мохер</span><span>◆</span><span>хлопок</span><span>◆</span><span>альпака</span><span>◆</span><span>акрил</span><span>◆</span>
+      <span>шерсть</span><span>◆</span><span>мохер</span><span>◆</span><span>хлопок</span><span>◆</span><span>альпака</span><span>◆</span><span>акрил</span><span>◆</span>
+      <span>шерсть</span><span>◆</span><span>мохер</span><span>◆</span><span>хлопок</span><span>◆</span><span>альпака</span><span>◆</span><span>акрил</span><span>◆</span>
+      <span>шерсть</span><span>◆</span><span>мохер</span><span>◆</span><span>хлопок</span><span>◆</span><span>альпака</span><span>◆</span><span>акрил</span><span>◆</span>
+      <span>шерсть</span><span>◆</span><span>мохер</span><span>◆</span><span>хлопок</span><span>◆</span><span>альпака</span><span>◆</span><span>акрил</span><span>◆</span>
+      <span>шерсть</span><span>◆</span><span>мохер</span><span>◆</span><span>хлопок</span><span>◆</span><span>альпака</span><span>◆</span><span>акрил</span><span>◆</span>
+    </div>
+  </div>
+
+  <!-- ATMOSPHERE VIDEO -->
+  <section class="atmosphere" id="atmosphere">
+    <video class="atmosphere__video" src="videos/atmosphere.mp4" poster="images/sections/atmosphere-poster.jpg" muted
+      loop playsinline preload="none"></video>
+    <div class="atmosphere__overlay"></div>
+    <div class="atmosphere__content container">
+      <p class="atmosphere__quote">Каждый клубок ждёт своего ряда</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="footer__logo">
+        <img src="images/logo/vyazaika-logo.svg" alt="Вязайка">
+      </a>
+
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/aclan2003md" target="_blank" rel="noopener" class="footer__social">Instagram</a>
+        <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener" class="footer__social">Facebook</a>
+      </div>
+
+      <span class="footer__copy">© 2026 Вязайка. Все вещи — в единственном экземпляре.</span>
+    </div>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
