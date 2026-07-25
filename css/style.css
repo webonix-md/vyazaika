@@ -1,32 +1,30 @@
 /* ==========================================================================
-   ВЯЗАЙКА — style.css   Вариант палитры «богемный эклектик» (бордо, горчица, изумруд, терракота
-   на тёмном тёплом фоне) — эксперимент поверх текущей вёрстки v2.
+   ВЯЗАЙКА — style.css
+   Светлое элегантное редакционное направление. Один файл, без сборщика.
    ========================================================================== */
 
 :root{
-  --brown:      #2b1e17;
-  --brown-dim:  #211712;
-  --caramel:    #c1673c;
-  --caramel-dim:#a8552f;
-  --beige:      #d9a441; /* горчичный (mustard) — имя переменной сохранено для совместимости */
-  --cream:      #f3e6cf;
-  --sage:       #3f5c3f;
-  --sage-dim:   #324a32;
-  --bordo:      #8c2f3f;
-  --bordo-dim:  #6c2331;
+  --brown:      #4B362B;
+  --brown-dim:  #6b5445;
+  --caramel:    #C68B59;
+  --caramel-dim:#a86f42;
+  --beige:      #DCC9B6;
+  --cream:      #F8F4EE;
+  --sage:       #8FA58C;
+  --sage-dim:   #6f8770;
 
-  --text:       var(--cream);
-  --text-dim:   rgba(243, 230, 207, 0.75);
-  --text-dim2:  rgba(243, 230, 207, 0.45);
-  --on-dark:    var(--cream);
-  --on-dark-dim:rgba(243, 230, 207, 0.75);
+  --text:       var(--brown);
+  --text-dim:   rgba(75, 54, 43, 0.8);
+  --text-dim2:  rgba(75, 54, 43, 0.45);
+  --on-dark:    #F8F4EE;
+  --on-dark-dim:rgba(248, 244, 238, 0.75);
 
   --white:#fff;
 
   --status-available: var(--sage);
-  --status-taken:     var(--bordo);
+  --status-taken:     var(--caramel);
 
-  --border: 1px solid rgba(243, 230, 207, 0.14);
+  --border: 1px solid rgba(75, 54, 43, 0.14);
 
   --radius:    22px;
   --radius-s:  12px;
@@ -46,7 +44,7 @@
 html{ scroll-behavior: smooth; }
 
 body{
-  background: var(--brown);
+  background: var(--cream);
   color: var(--text);
   font-family: var(--font-body);
   font-size: 16px;
@@ -78,10 +76,10 @@ img{ display:block; max-width:100%; }
 }
 .btn-primary{ background: var(--caramel); color:#fff; }
 .btn-primary:hover{ background: var(--caramel-dim); transform: translateY(-1px); }
-.btn-outline{ background: transparent; color: var(--on-dark); border:1px solid rgba(243,230,207,0.6); }
-.btn-outline:hover{ border-color: var(--on-dark); background: rgba(243,230,207,0.12); }
-.btn-outline-dark{ background: transparent; color: var(--brown); border:1px solid rgba(43,30,23,0.35); }
-.btn-outline-dark:hover{ border-color: var(--brown); background: rgba(43,30,23,0.06); }
+.btn-outline{ background: transparent; color: var(--on-dark); border:1px solid rgba(248,244,238,0.6); }
+.btn-outline:hover{ border-color: var(--on-dark); background: rgba(248,244,238,0.12); }
+.btn-outline-dark{ background: transparent; color: var(--brown); border:1px solid rgba(75,54,43,0.35); }
+.btn-outline-dark:hover{ border-color: var(--brown); background: rgba(75,54,43,0.06); }
 
 /* ===== SECTION SHELL ===== */
 .section{ padding-block: 120px; position:relative; }
@@ -89,13 +87,13 @@ img{ display:block; max-width:100%; }
 @media (max-width:1024px){ .section{ padding-block:80px; } }
 @media (max-width:768px){ .section{ padding-block:60px; } }
 
-/* Вязаная текстура фоном — фото реальной вязки, приглушённое тёмной вуалью.
+/* Вязаная текстура фоном — фото реальной вязки, приглушённое кремовой вуалью.
    Один фиксированный слой (без повтора) — тайлинг большого фото по всей
    длинной секции сильно нагружал рендер. */
 .knit-texture{
-  background-color: var(--brown);
+  background-color: var(--cream);
   background-image:
-    linear-gradient(rgba(43,30,23,0.85), rgba(43,30,23,0.85)),
+    linear-gradient(rgba(248,244,238,0.85), rgba(248,244,238,0.85)),
     url("../images/textures/knit-bg1.jpg");
   background-size: cover, cover;
   background-position: center, bottom;
@@ -125,9 +123,7 @@ img{ display:block; max-width:100%; }
 .section-head--center{display: flex;flex-direction: column; align-items: center; text-align:center; margin-inline:auto; }
 .section-head--center .section-lead{ margin-inline:auto; }
 
-/* ===== HEADER =====
-   Хедер намеренно оставлен светлым «островком» — так лучше читается логотип
-   на любой теме, поэтому его текст завязан на var(--brown), а не на var(--text). */
+/* ===== HEADER ===== */
 .header{
   position: fixed; top:0; left:0; right:0; z-index:100;
   display:flex; align-items:center;
@@ -137,7 +133,7 @@ img{ display:block; max-width:100%; }
 }
 @media (max-width:900px){.header{padding: 20px var(--pad-x)}}
 .header.is-scrolled{
-  box-shadow: 0 2px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 24px rgba(75,54,43,0.08);
 }
 .header__logo{ display:block; width:150px; }
 @media (max-width:900px) {.header__logo{width: 120px;}}
@@ -153,7 +149,7 @@ img{ display:block; max-width:100%; }
 
 .header__nav{ display:flex; align-items:center; gap:28px; }
 @media (max-width:900px){ .header__nav{ display:none; } }
-.header__link{ font-size:14px; color: var(--brown); position:relative; padding-bottom:4px; }
+.header__link{ font-size:14px; color: var(--text); position:relative; padding-bottom:4px; }
 .header__link::after{
   content:''; position:absolute; left:0; bottom:0; width:0; height:1px; background: var(--caramel);
   transition: width var(--dur);
@@ -175,7 +171,7 @@ img{ display:block; max-width:100%; }
 @media (max-width:900px){ .header__burger{ display:block; } }
 
 .mobile-menu{
-  position:fixed; inset:0; z-index:101; background: #F8F4EE;
+  position:fixed; inset:0; z-index:101; background: var(--cream);
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:26px;
   opacity:0; pointer-events:none; transform: translateY(-10px);
   transition: opacity var(--dur), transform var(--dur);
@@ -208,7 +204,7 @@ img{ display:block; max-width:100%; }
 .hero__tag{
   display:inline-flex; align-items:center; gap:8px; font-size:12px; letter-spacing:1.5px; text-transform:uppercase;
   color:#fff; border:1px solid rgba(255,255,255,0.5); padding:8px 16px; border-radius: var(--radius-pill);
-  background: rgba(43,30,23,0.35); backdrop-filter: blur(4px); margin-bottom:24px;
+  background: rgba(75,54,43,0.25); backdrop-filter: blur(4px); margin-bottom:24px;
 }
 .hero__tag::before{ content:''; width:6px; height:6px; border-radius:50%; background:#fff; }
 .hero__title{
@@ -286,7 +282,7 @@ img{ display:block; max-width:100%; }
 .how__bg2{position: absolute; bottom: 0%; right: -4%; opacity: 0.4; z-index:0; pointer-events:none; width:22vw; height:auto; opacity: 0.1;rotate: 35deg;}
 #how .container{ position:relative; z-index:1; }
 .how__timeline{ position:relative; display:flex; gap:56px; }
-.how__line{ position:relative; width:2px; flex-shrink:0; background: rgba(243,230,207,0.14); border-radius:2px; }
+.how__line{ position:relative; width:2px; flex-shrink:0; background: rgba(75,54,43,0.14); border-radius:2px; }
 .how__line-fill{
   position:absolute; top:0; left:0; width:100%; height:100%; background: var(--caramel); border-radius:2px;
   transform-origin: top center; transform: scaleY(0);
@@ -307,18 +303,16 @@ img{ display:block; max-width:100%; }
   .how__step{ max-width:none; }
 }
 @media (max-width:480px){
-  .how__bg1{ max-width:52vw; }
-  .how__bg2{ max-width:46vw; }
+  .how__bg1{top: -4%; left: -5%; width:52vw; }
+  .how__bg2{bottom: 10%; width:46vw; }
   .how__num{ font-size:44px; }
 }
 
-/* ===== GALLERY =====
-   Карточки товаров — светлый («тёплый крем») островок на тёмном фоне секции,
-   поэтому текст внутри карточки завязан на var(--brown), а не на var(--text). */
+/* ===== GALLERY ===== */
 .gallery__filters{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:44px; }
 .gallery__filter{
   background:transparent; font-family: var(--font-body); font-size:14px; font-weight:600; color: var(--text-dim);
-  border:1px solid rgba(243,230,207,0.25); padding:10px 22px; border-radius: var(--radius-pill); cursor:pointer;
+  border:1px solid rgba(75,54,43,0.2); padding:10px 22px; border-radius: var(--radius-pill); cursor:pointer;
 }
 .gallery__filter:hover{ border-color: var(--caramel); color: var(--text); }
 .gallery__filter.is-active{ background: var(--caramel); border-color: var(--caramel); color:#fff; }
@@ -327,7 +321,7 @@ img{ display:block; max-width:100%; }
 @media (max-width:1024px){ .gallery__grid{ grid-template-columns:repeat(2,1fr);} }
 @media (max-width:640px){ .gallery__grid{ grid-template-columns:1fr;} }
 
-.gallery-card{ position:relative; border-radius: var(--radius); overflow:hidden; background: var(--cream); box-shadow: 0 14px 34px rgba(0,0,0,0.4); }
+.gallery-card{ position:relative; border-radius: var(--radius); overflow:hidden; background:#fff; box-shadow: 0 10px 30px rgba(75,54,43,0.08); }
 .gallery-card.is-hidden{ display:none; }
 .gallery-card__media{ position:relative; overflow:hidden; aspect-ratio: 4/5; }
 .gallery-card__media img{ width:100%; height:100%; object-fit:cover; transition: transform 0.5s ease; }
@@ -346,7 +340,7 @@ img{ display:block; max-width:100%; }
 .gallery-card__badge[data-status="available"]{ background: var(--status-available); }
 .gallery-card__badge[data-status="taken"]{ background: var(--status-taken); }
 .gallery-card__body{ padding:18px 20px 22px; }
-.gallery-card__name{ font-family: var(--font-head); font-size:18px; color: var(--brown); margin-bottom:8px; }
+.gallery-card__name{ font-family: var(--font-head); font-size:18px; color: var(--text); margin-bottom:8px; }
 .gallery-card__link{ font-size:13px; font-weight:600; color: var(--caramel); }
 .gallery-card__link:hover{ color: var(--brown); }
 
@@ -357,16 +351,16 @@ img{ display:block; max-width:100%; }
    уменьшаем и уводим в самый угол, чтобы не перекрывали текст/ссылки. */
 #about .how__bg1{ width:30vw; top:0; left:-8%; opacity: 0.1; }
 #about .how__bg2{ width:20vw; bottom:5%; right:-0%; opacity: 0.1; rotate: 320deg; }
-@media (max-width:600px){
-  #about .how__bg1{ max-width:30vw; top:-4%; left:-10%; }
-  #about .how__bg2{ max-width:26vw; bottom:-4%; right:-10%; }
+@media (max-width:480px){
+  #about .how__bg1{ max-width:30vw; top:0%; left: 0%; rotate: 20deg;}
+  #about .how__bg2{ width:40vw; bottom:0%; right:-10%; }
 }
 
 .about__socials{ display:flex; justify-content:center; gap:20px; position:relative; z-index:1; }
 .about__social{ font-size:14px; font-weight:600; color: var(--text); border-bottom:1px solid var(--caramel); padding-bottom:2px; }
 .about__social:hover{ color: var(--caramel); }
 
-#about .contact__icon img{ filter: drop-shadow(0 8px 20px rgba(193,103,60,0.55)); }
+#about .contact__icon img{ filter: drop-shadow(0 8px 20px rgba(198,139,89,0.55)); }
 
 /* ===== STORY (полные истории клиентки) ===== */
 .story{ display:grid; grid-template-columns: 1fr 1fr; align-items:stretch; }
@@ -374,7 +368,7 @@ img{ display:block; max-width:100%; }
 
 .story__media{
   position:sticky; top:0; align-self:start;
-  height:100vh; min-height:560px; overflow:hidden; order:1;
+  height:70vh; min-height:560px; overflow:hidden; order:1;
 }
 @media (max-width:960px){
   .story__media{ position:relative; top:auto; height:420px; min-height:0; order:1 !important; }
@@ -383,7 +377,7 @@ img{ display:block; max-width:100%; }
 .story__index{
   position:absolute; left:24px; bottom:8px; z-index:1;
   font-family: var(--font-head); font-weight:600; font-size:clamp(80px, 10vw, 140px); line-height:1;
-  color:transparent; -webkit-text-stroke: 1.5px rgba(243,230,207,0.85);
+  color:transparent; -webkit-text-stroke: 1.5px rgba(248,244,238,0.85);
 }
 
 .story__body{ display:flex; align-items:center; order:2; }
@@ -392,36 +386,48 @@ img{ display:block; max-width:100%; }
 @media (max-width:960px){ .story__body-inner{ padding:56px var(--pad-x); } }
 
 .story__title{ font-family: var(--font-head); font-style:italic; font-weight:600; font-size: clamp(30px, 3.2vw, 44px); color: var(--text); margin:8px 0 24px; }
+.story__text{
+  max-height:280px; overflow:hidden;
+  transition: max-height 0.5s ease;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 56px), transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 calc(100% - 56px), transparent 100%);
+}
+.story__text.is-expanded{
+  max-height:3000px;
+  -webkit-mask-image:none;
+          mask-image:none;
+}
 .story__text p{ font-size:16px; line-height:1.9; color: var(--text-dim); margin-bottom:18px; }
 .story__text p:last-child{ margin-bottom:0; }
 .story__text .story__beat{
-  font-family: var(--font-head); font-style:italic; font-size:21px; color: var(--caramel); margin:30px 0;
+  font-family: var(--font-head); font-style:italic; font-size:21px; color: var(--caramel-dim); margin:30px 0;
 }
+
+.story__toggle{
+  display:inline-flex; align-items:center; gap:6px; margin-top:20px;
+  font-family: var(--font-body); font-size:14px; font-weight:600; color: var(--caramel);
+  background:none; border:none; border-bottom:1px solid var(--caramel); cursor:pointer; padding:0 0 2px;
+}
+.story__toggle:hover{ color: var(--brown); border-color: var(--brown); }
+.story__toggle-icon{ display:inline-block; transition: transform var(--dur); }
+.story__text.is-expanded ~ .story__toggle .story__toggle-icon{ transform: rotate(180deg); }
 
 .story--reverse .story__media{ order:2; }
 .story--reverse .story__body{ order:1; }
 
-#story-phoebe .story__body{ background: rgba(63,92,63,0.18); }
-#story-budapest .story__body{ background: rgba(193,103,60,0.14); }
+#story-phoebe .story__body{ background: rgba(143,165,140,0.10); }
+#story-budapest .story__body{ background: rgba(198,139,89,0.08); }
 
 /* ===== CONTACT ===== */
 .contact{
   position:relative; overflow:hidden;
-  background-color: var(--brown-dim);
+  background-color: var(--brown);
   background-image:
-    linear-gradient(rgba(33,23,18,0.85), rgba(33,23,18,0.85)),
+    linear-gradient(rgba(75,54,43,0.82), rgba(75,54,43,0.82)),
     url("../images/textures/knit-bg1.jpg");
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
-}
-
-.contact__inner{ position:relative; z-index:1; text-align:center; padding-block:100px; }
-@media (max-width:768px){ .contact__inner{ padding-block:64px; } }
-.contact__title{ font-size: clamp(30px,4.2vw,52px); color:var(--cream); margin-bottom:18px; }
-.contact__title em{ font-style:italic; color: var(--beige); }
-.contact__sub{ font-size:17px; color: rgba(243,230,207,0.75); margin-bottom:44px; }
-o-repeat;
 }
 
 .contact__inner{ position:relative; z-index:1; text-align:center; padding-block:100px; }

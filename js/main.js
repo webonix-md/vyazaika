@@ -67,6 +67,18 @@ document.addEventListener('DOMContentLoaded', function () {
     io.observe(atmosphereVideo);
   }
 
+  // ── Разворачивание длинных историй ──
+  document.querySelectorAll('.story__toggle').forEach(function (btn) {
+    var text = btn.previousElementSibling;
+    var label = btn.querySelector('.story__toggle-label');
+    if (!text || !label) return;
+
+    btn.addEventListener('click', function () {
+      var expanded = text.classList.toggle('is-expanded');
+      label.textContent = expanded ? 'Свернуть' : 'Читать дальше';
+    });
+  });
+
   // ── Фильтры галереи ──
   var galleryFilters = document.getElementById('galleryFilters');
   var galleryGrid = document.getElementById('galleryGrid');
