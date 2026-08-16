@@ -35,20 +35,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ── Видео в карточках галереи: играет при наведении ──
+  // ── Видео в карточках галереи: играет по клику, со звуком ──
   document.querySelectorAll('.gallery-card--video').forEach(function (card) {
+    var media = card.querySelector('.gallery-card__media');
     var video = card.querySelector('.gallery-card__video');
-    if (!video) return;
+    if (!media || !video) return;
 
-    card.addEventListener('mouseenter', function () {
-      card.classList.add('is-playing');
+    media.addEventListener('click', function () {
+      if (card.classList.contains('is-playing')) {
+        video.pause();
+        card.classList.remove('is-playing');
+        return;
+      }
+
+      video.muted = false;
       video.currentTime = 0;
       video.play().catch(function () {});
+      card.classList.add('is-playing');
     });
 
-    card.addEventListener('mouseleave', function () {
+    video.addEventListener('ended', function () {
       card.classList.remove('is-playing');
-      video.pause();
     });
   });
 

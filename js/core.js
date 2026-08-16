@@ -30,14 +30,42 @@ window.VYAZAIKA = (function () {
 
     document.querySelectorAll('[data-reveal-group]').forEach(function (group) {
       var items = group.querySelectorAll(':scope > *');
-      gsap.from(items, {
-        opacity: 0,
-        y: 36,
-        scale: 0.96,
-        duration: 0.7,
-        ease: 'power3.out',
-        stagger: { each: 0.08, from: 'start' },
-        scrollTrigger: { trigger: group, start: 'top 85%', once: true }
+      gsap.set(items, { opacity: 0, y: 36, scale: 0.96 });
+
+      // batch вместо одного триггера на всю группу — каждый ряд всплывает
+      // сам по себе, когда доскроллен до него, а не только самый первый
+      // (единственный, что был в зоне видимости в момент срабатывания
+      // общего триггера на всю группу).
+      ScrollTrigger.batch(items, {
+        start: 'top 85%',
+        once: true,
+        onEnter: function (batch) {
+          gsap.to(batch, {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 0.7,
+            ease: 'power3.out',
+            stagger: { each: 0.08, from: 'start' }
+          });
+        }
+      });
+    });
+
+    // Браузер при перезагрузке восстанавливает прежний скролл — если это
+    // происходит уже после того, как ScrollTrigger посчитал позиции
+    // триггеров, часть карточек может остаться с opacity:0 навсегда.
+    // Подстраховка: после полной загрузки страницы пересчитываем триггеры
+    // и дополнительно раскрываем всё, что уже физически видно на экране.
+    window.addEventListener('load', function () {
+      ScrollTrigger.refresh();
+
+      document.querySelectorAll('[data-reveal-group] > *').forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        var inView = r.top < window.innerHeight && r.bottom > 0;
+        if (inView && getComputedStyle(el).opacity === '0') {
+          gsap.to(el, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: 'power3.out' });
+        }
       });
     });
   }

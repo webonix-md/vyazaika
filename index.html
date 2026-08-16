@@ -128,15 +128,16 @@
     </section>
     <!-- ABOUT — фото + бегущая строка поверх фото (приём с lavkabulavka) -->
     <section class="section about" id="about">
-      <img class="how__bg1" src="images/icons/icon-instagram.png" alt="">
-      <img class="how__bg2" src="images/icons/icon-facebook.png" alt="">
+      <img class="how__bg1" src="/images/icons/icon-instagram.png" alt="">
+      <img class="how__bg2" src="/images/icons/icon-facebook.png" alt="">
       <div class="container">
         <div class="section-head section-head--center" data-reveal>
           <span class="eyebrow">Обо мне</span>
           <h2 class="section-title">Тараканы, изюминки, <em>закидоны и капризы</em></h2>
           <p class="section-lead">
             Вяжу с 8 лет. С перерывами лет по 10 — то спицы в руках, то их нет вовсе. <br>
-            Вязание для меня это не  работа, это хобби, переросшее во что то большее. В целый мир, который принимает меня со всеми моими тараканами и изюминками, закидонами и капризами.
+            Вязание для меня это не работа, это хобби, переросшее во что то большее. В целый мир, который принимает меня
+            со всеми моими тараканами и изюминками, закидонами и капризами.
             <br>И со своими историями
           </p>
         </div>
@@ -144,7 +145,8 @@
         <div class="about__socials">
           <a href="https://www.instagram.com/aclan2003md" target="_blank" rel="noopener"
             class="about__social">Instagram</a>
-          <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener" class="about__social">Facebook</a>
+          <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener"
+            class="about__social">Facebook</a>
         </div>
       </div>
     </section>
@@ -152,7 +154,7 @@
     <!-- STORY 1 — Фиби -->
     <section class="story" id="story-phoebe">
       <div class="story__media story__media--1" data-reveal>
-        <img src="images/sections/story-phoebe-cat.jpg" alt="Белая турецкая ангора с голубыми глазами у окна">
+        <img src="images/sections/fibi2.jpg" alt="Белая турецкая ангора с голубыми глазами у окна">
         <span class="story__index">01</span>
       </div>
       <div class="story__body">
@@ -225,8 +227,8 @@
 
     <!-- HOW IT WORKS -->
     <section class="section" id="how">
-      <img class="how__bg1" src="images/icons/icon-telegram.png" alt="">
-      <img class="how__bg2" src="images/icons/icon-viber.png" alt="">
+      <img class="how__bg1" src="/images/icons/icon-telegram.png" alt="">
+      <img class="how__bg2" src="/images/icons/icon-viber.png" alt="">
       <div class="container">
         <div class="section-head section-head--center" data-reveal>
           <span class="eyebrow">Как это работает</span>
@@ -277,70 +279,80 @@
 
         <div class="gallery__grid" id="galleryGrid" data-reveal-group>
 
-          <article class="gallery-card" data-category="odezhda">
+          <article class="gallery-card gallery-card--video" data-category="odezhda">
             <div class="gallery-card__media">
-              <img src="images/gallery/odezhda-plate-izumrud.jpg" alt="Зелёное вязаное платье-свитер косами"
-                loading="lazy">
+              <img src="images/gallery/odezhda-osa.jpg" alt="Вязаная полосатая маечка" loading="lazy">
+              <video class="gallery-card__video" src="videos/osa.mp4"  playsinline
+                preload="none"></video>
+              <span class="gallery-card__play" aria-hidden="true"></span>
               <span class="gallery-card__badge" data-status="available">Доступно</span>
             </div>
             <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Платье «Изумрудный вечер»</h3>
+              <h3 class="gallery-card__name">Первый свет</h3>
               <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
             </div>
           </article>
 
-          <article class="gallery-card" data-category="aksessuar">
+          <article class="gallery-card gallery-card--video" data-category="odezhda">
             <div class="gallery-card__media">
-              <img src="images/gallery/aksessuar-ryukzak.jpg" alt="Вязаный рюкзак бежево-серый" loading="lazy">
+              <img src="images/gallery/odezhda-tricolor.png" alt="Вязаная трехцветная маечка" loading="lazy">
+              <video class="gallery-card__video" src="videos/tricolor.mp4"  playsinline
+                preload="none"></video>
+              <span class="gallery-card__play" aria-hidden="true"></span>
               <span class="gallery-card__badge" data-status="available">Доступно</span>
             </div>
             <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Рюкзак «Ягодная поляна»</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
+              <h3 class="gallery-card__name">Цветной характер</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-ta-cto-vibiraet.jpg" alt="Белая ажурная вязаная косынка-шаль" loading="lazy">
+              <video class="gallery-card__video" src="videos/ta-cto-vibiraet.mp4"   playsinline
+                preload="none"></video>
+              <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Та что выбирает</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-nakidka-rozovaya2.jpg" alt="Розовая вязаная накидка" loading="lazy">
+              <video class="gallery-card__video" src="videos/odezhda-nakidka-rozovaya2.mp4"   playsinline
+                preload="none"></video>
+              <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Розовый воздух</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-akvarelnoe-nastroenie.jpg" alt="Трёхцветная вязаная кофта" loading="lazy">
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+              </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Акварельное настроение</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
             </div>
           </article>
 
           <article class="gallery-card" data-category="odezhda">
             <div class="gallery-card__media">
               <img src="images/gallery/odezhda-kofta-sinyaya.jpg" alt="Синяя ажурная вязаная кофта" loading="lazy">
-              <span class="gallery-card__badge" data-status="taken">Нашла свой дом</span>
-            </div>
-            <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Кофта «Васильковый сад»</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-category="igrushka">
-            <div class="gallery-card__media">
-              <img src="images/gallery/igrushka-loshadki.jpg" alt="Вязаные игрушки-лошадки, набор" loading="lazy">
-              <span class="gallery-card__badge" data-status="taken">Нашли свой дом</span>
-            </div>
-            <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Табун лошадок</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о них →</a>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-category="odezhda">
-            <div class="gallery-card__media">
-              <img src="images/gallery/odezhda-zhilet-bordo.jpg" alt="Бордовый вязаный жилет с поясом" loading="lazy">
               <span class="gallery-card__badge" data-status="available">Доступно</span>
             </div>
             <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Жилет «Бордовое настроение»</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-category="aksessuar">
-            <div class="gallery-card__media">
-              <img src="images/gallery/aksessuar-sumka-biryuza.jpg" alt="Бирюзовая сумка-торба с вышивкой"
-                loading="lazy">
-              <span class="gallery-card__badge" data-status="taken">Нашла свой дом</span>
-            </div>
-            <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Сумка «Одуванчиковое лето»</h3>
+              <h3 class="gallery-card__name">Васильковый сад</h3>
               <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
             </div>
           </article>
@@ -348,116 +360,183 @@
           <article class="gallery-card gallery-card--video" data-category="odezhda">
             <div class="gallery-card__media">
               <img src="images/gallery/odezhda-kardigan-limon2.jpg" alt="Салатовый ажурный кардиган" loading="lazy">
-              <video class="gallery-card__video" src="videos/kardigan-limon.mp4" muted loop playsinline
+              <video class="gallery-card__video" src="videos/kardigan-limon.mp4"  playsinline
                 preload="none"></video>
+              <span class="gallery-card__play" aria-hidden="true"></span>
               <span class="gallery-card__badge" data-status="available">Доступно</span>
             </div>
             <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Кардиган «Лаймовый бриз»</h3>
+              <h3 class="gallery-card__name">Лаймовый бриз</h3>
               <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-letnia-koftohka-osa.jpg" alt="Полосатая вязаная маечка" loading="lazy">
+              <video class="gallery-card__video" src="videos/odezhda-letnia-koftohka-osa.mp4"   playsinline
+                preload="none"></video>
+              <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Оса</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-izumrudnii-zakat.jpg" alt="Зелёное вязаное платье-свитер косами" loading="lazy">
+              <video class="gallery-card__video" src="videos/izumrudnii-zakat.mp4"  playsinline
+                preload="none"></video>
+              <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Изумрудный вечер</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о нем →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="odezhda">
+            <div class="gallery-card__media">
+              <img src="images/gallery/odezhda-noski.jpg" alt="Вязаные носки зелёно-жёлтые" loading="lazy">
+              <video class="gallery-card__video" src="videos/noski.mp4"  playsinline
+                preload="none"></video>
+              <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="taken">Нашли свой дом</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Теплые следы</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о них →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="aksessuar">
+            <div class="gallery-card__media">
+              <img src="images/gallery/aksessuar-letnii-veter.jpg" alt="Бирюзовая сумка-торба с вышивкой" loading="lazy">
+              <video class="gallery-card__video" src="videos/letnii-veter.mp4"  playsinline
+                preload="none"></video>
+                <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Летний ветер</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="aksessuar">
+            <div class="gallery-card__media">
+              <img src="images/gallery/aksessuar-ryukzak.jpg" alt="Высокий бежевый шоппер" loading="lazy">
+              <video class="gallery-card__video" src="videos/sumka-tout.mp4"  playsinline
+                preload="none"></video>
+                <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Большие планы</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="aksessuar">
+            <div class="gallery-card__media">
+              <img src="images/gallery/aksessuar-sumka-duet.jpg" alt="Двухцветная сумка" loading="lazy">
+              <video class="gallery-card__video" src="videos/sumka-duet.mp4"  playsinline
+                preload="none"></video>
+                <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Дуэт</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--video" data-category="aksessuar">
+            <div class="gallery-card__media">
+              <img src="images/gallery/aksessuar-kosmeticka.jpg" alt="Вязаная косметичка" loading="lazy">
+              <video class="gallery-card__video" src="videos/kosmeticka.mp4"  playsinline
+                preload="none"></video>
+                <span class="gallery-card__play" aria-hidden="true"></span>
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Хранительница тайн</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="igrushka">
+            <div class="gallery-card__media">
+              <img src="images/gallery/igrushka-loshadki.jpg" alt="Вязаные игрушки-лошадки, набор" loading="lazy">
+              
+              <span class="gallery-card__badge" data-status="available">Доступно</span>
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__name">Огненный табун</h3>
+              <a href="#contact" class="gallery-card__link">Спросить о них →</a>
             </div>
           </article>
 
           <article class="gallery-card gallery-card--video" data-category="igrushka">
             <div class="gallery-card__media">
               <img src="images/gallery/igrushka-yagnenok.jpg" alt="Вязаная игрушка лошадка в попоне" loading="lazy">
-              <video class="gallery-card__video" src="videos/igrushka-loshadki2.mp4" muted loop playsinline
+              <video class="gallery-card__video" src="videos/igrushka-loshadki2.mp4"  playsinline
                 preload="none"></video>
-              <span class="gallery-card__badge" data-status="available">Доступно</span>
-            </div>
-            <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Лошадка в попоне</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-category="odezhda">
-            <div class="gallery-card__media">
-              <img src="images/gallery/odezhda-nakidka-rozovaya.jpg" alt="Розовая вязаная накидка" loading="lazy">
+              <span class="gallery-card__play" aria-hidden="true"></span>
               <span class="gallery-card__badge" data-status="taken">Нашла свой дом</span>
             </div>
             <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Накидка «Розовый закат»</h3>
+              <h3 class="gallery-card__name">Символ года</h3>
               <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
             </div>
           </article>
 
-          <article class="gallery-card" data-category="aksessuar">
+          <article class="gallery-card gallery-card--video" data-category="aksessuar">
             <div class="gallery-card__media">
-              <img src="images/gallery/aksessuar-shal-belaya.jpg" alt="Белая ажурная вязаная косынка-шаль"
-                loading="lazy">
+              <img src="images/gallery/aksessuar-cvetocki.jpg" alt="Вязаные цветочки" loading="lazy">
+              <video class="gallery-card__video" src="videos/cvetocki.mp4"  playsinline
+                preload="none"></video>
+                <span class="gallery-card__play" aria-hidden="true"></span>
               <span class="gallery-card__badge" data-status="available">Доступно</span>
             </div>
             <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Шаль «Кружевная тишина»</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-category="odezhda">
-            <div class="gallery-card__media">
-              <img src="images/gallery/odezhda-bolero-rozovoe.jpg" alt="Розовое ажурное болеро" loading="lazy">
-              <span class="gallery-card__badge" data-status="available">Доступно</span>
-            </div>
-            <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Болеро «Нежность»</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-category="aksessuar">
-            <div class="gallery-card__media">
-              <img src="images/gallery/aksessuar-noski.jpg" alt="Вязаные носки зелёно-жёлтые" loading="lazy">
-              <span class="gallery-card__badge" data-status="available">Доступно</span>
-            </div>
-            <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Носки «Лесная прогулка»</h3>
+              <h3 class="gallery-card__name">Игривые точки</h3>
               <a href="#contact" class="gallery-card__link">Спросить о них →</a>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-category="odezhda">
-            <div class="gallery-card__media">
-              <img src="images/gallery/odezhda-plate-bezhevoe.jpg" alt="Бежевое длинное вязаное платье" loading="lazy">
-              <span class="gallery-card__badge" data-status="taken">Нашла свой дом</span>
-            </div>
-            <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Платье «Карамельный уют»</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о нём →</a>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-category="odezhda">
-            <div class="gallery-card__media">
-              <img src="images/gallery/odezhda-kofta-trehtsvet.jpg" alt="Трёхцветная вязаная кофта" loading="lazy">
-              <span class="gallery-card__badge" data-status="available">Доступно</span>
-            </div>
-            <div class="gallery-card__body">
-              <h3 class="gallery-card__name">Кофта «Три настроения»</h3>
-              <a href="#contact" class="gallery-card__link">Спросить о ней →</a>
             </div>
           </article>
 
         </div>
       </div>
-      
+
     </section>
     <div class="hero__marquee">
       <div class="hero__marquee-track">
-        <span>Изумрудный вечер</span><span>·</span><span>Ягодная поляна</span><span>·</span><span>Васильковый сад</span><span>·</span>
-        <span>Табун лошадок</span><span>·</span><span>Бордовое настроение</span><span>·</span><span>Одуванчиковое лето</span><span>·</span>
-        <span>Лаймовый бриз</span><span>·</span><span>Лошадка в попоне</span><span>·</span><span>Розовый закат</span><span>·</span>
-        <span>Кружевная тишина</span><span>·</span><span>Нежность</span><span>·</span><span>Лесная прогулка</span><span>·</span>
+        <span>Изумрудный вечер</span><span>·</span><span>Ягодная поляна</span><span>·</span><span>Васильковый
+          сад</span><span>·</span>
+        <span>Табун лошадок</span><span>·</span><span>Бордовое настроение</span><span>·</span><span>Одуванчиковое
+          лето</span><span>·</span>
+        <span>Лаймовый бриз</span><span>·</span><span>Лошадка в попоне</span><span>·</span><span>Розовый
+          закат</span><span>·</span>
+        <span>Кружевная тишина</span><span>·</span><span>Нежность</span><span>·</span><span>Лесная
+          прогулка</span><span>·</span>
         <span>Карамельный уют</span><span>·</span><span>Три настроения</span><span>·</span>
-        <span>Изумрудный вечер</span><span>·</span><span>Ягодная поляна</span><span>·</span><span>Васильковый сад</span><span>·</span>
-        <span>Табун лошадок</span><span>·</span><span>Бордовое настроение</span><span>·</span><span>Одуванчиковое лето</span><span>·</span>
-        <span>Лаймовый бриз</span><span>·</span><span>Лошадка в попоне</span><span>·</span><span>Розовый закат</span><span>·</span>
-        <span>Кружевная тишина</span><span>·</span><span>Нежность</span><span>·</span><span>Лесная прогулка</span><span>·</span>
+        <span>Изумрудный вечер</span><span>·</span><span>Ягодная поляна</span><span>·</span><span>Васильковый
+          сад</span><span>·</span>
+        <span>Табун лошадок</span><span>·</span><span>Бордовое настроение</span><span>·</span><span>Одуванчиковое
+          лето</span><span>·</span>
+        <span>Лаймовый бриз</span><span>·</span><span>Лошадка в попоне</span><span>·</span><span>Розовый
+          закат</span><span>·</span>
+        <span>Кружевная тишина</span><span>·</span><span>Нежность</span><span>·</span><span>Лесная
+          прогулка</span><span>·</span>
         <span>Карамельный уют</span><span>·</span><span>Три настроения</span><span>·</span>
-        
+
       </div>
     </div>
-    
+
     <!-- CONTACT -->
     <section class="contact" id="contact">
       <div class="container contact__inner" data-reveal>
@@ -466,13 +545,16 @@
         <p class="contact__sub">Не обещаю быстрый ответ, обещаю тёплый.</p>
 
         <div class="contact__icons">
-          <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener" class="contact__icon" aria-label="Facebook">
+          <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener" class="contact__icon"
+            aria-label="Facebook">
             <img src="images/icons/icon-facebook.png" alt="Facebook" loading="lazy">
           </a>
-          <a href="https://www.instagram.com/aclan2003md" target="_blank" rel="noopener" class="contact__icon" aria-label="Instagram">
+          <a href="https://www.instagram.com/aclan2003md" target="_blank" rel="noopener" class="contact__icon"
+            aria-label="Instagram">
             <img src="images/icons/icon-instagram.png" alt="Instagram" loading="lazy">
           </a>
-          <a href="https://t.me/zaiteva_angela" target="_blank" rel="noopener" class="contact__icon" aria-label="Telegram">
+          <a href="https://t.me/zaiteva_angela" target="_blank" rel="noopener" class="contact__icon"
+            aria-label="Telegram">
             <img src="images/icons/icon-telegram.png" alt="Telegram" loading="lazy">
           </a>
           <a href="viber://chat?number=37379553112" class="contact__icon" aria-label="Viber">
@@ -481,7 +563,7 @@
         </div>
       </div>
     </section>
-    
+
 
   </main>
 
@@ -515,11 +597,31 @@
       </a>
 
       <div class="footer__socials">
-        <a href="https://www.instagram.com/aclan2003md" target="_blank" rel="noopener" class="footer__social">Instagram</a>
-        <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener" class="footer__social">Facebook</a>
+        <a href="https://www.instagram.com/aclan2003md" target="_blank" rel="noopener"
+          class="footer__social">Instagram</a>
+        <a href="https://www.facebook.com/share/1E7wXyBfVS/" target="_blank" rel="noopener"
+          class="footer__social">Facebook</a>
       </div>
 
-      <span class="footer__copy">© 2026 Вязайка. Все вещи — в единственном экземпляре.</span>
+      <a href="https://webonix.md" target="_blank" rel="noopener" class="footer__meta">
+        <div class="footer__credit">© Сайт создан студией Webonix 2026</div>
+        <div class="footer__link">
+          <svg viewBox="44 186 433 141" xmlns="http://www.w3.org/2000/svg">
+          <path d="M146.5,288.2l-18.8-37.4L109,288.2H89l-23.4-52.6h17.7l16.3,38.3l18.8-38.3h18.7l19.3,38.3l15.4-37c-8-24-30.7-41.3-57.4-41.3c-33.4,0-60.5,27.1-60.5,60.5s27.1,60.5,60.5,60.5c21.6,0,40.6-11.3,51.3-28.4L146.5,288.2L146.5,288.2z"/>
+          <circle cx="183.3" cy="226.1" r="10.4"/>
+          <path d="M204.2,281c3,0,5.8-0.1,8.2-0.3c2.5-0.2,4.7-0.5,6.6-0.8c1.9-0.3,3.4-0.5,4.5-0.7l1.9,6.5c-1.8,0.4-3.9,0.8-6.3,1.2c-2.4,0.3-5,0.6-7.7,0.8c-2.7,0.2-5.3,0.3-8,0.3c-5.6,0-10.2-0.5-13.9-1.6c-3.6-1.1-6.4-2.8-8.1-5.1c-1.8-2.3-2.7-5.4-2.7-9.3c0-3.8,0.9-6.9,2.8-9.2c1.9-2.3,4.6-4,8.1-5.1c3.6-1.1,7.9-1.6,12.9-1.6c3.6,0,6.8,0.2,9.7,0.8c2.9,0.5,5.4,1.3,7.5,2.4s3.7,2.5,4.8,4.3s1.7,4,1.7,6.6c0,0.4,0,0.9,0,1.4c0,0.6-0.1,1.1-0.1,1.6s-0.1,0.8-0.1,1.1h-42.4v-4.8h35.3l-1.4,1.9c0-2.1-0.4-3.8-1.2-5.1c-0.8-1.3-2.3-2.3-4.5-2.9s-5.4-1-9.5-1c-3.6,0-6.5,0.3-8.7,0.9s-3.8,1.6-4.7,2.9c-1,1.4-1.4,3.2-1.4,5.6c0,1.9,0.3,3.4,0.9,4.7c0.6,1.2,1.5,2.2,2.8,2.8c1.3,0.6,3,1.1,5.2,1.3C198.4,280.9,201.1,281,204.2,281z"/>
+          <rect x="232.6" y="242.4" width="8.9" height="45"/>
+          <path d="M260.3,287.4H237v-7.3h22.6c2.6,0,4.8-0.3,6.5-0.8c1.8-0.5,3.1-1.4,4-2.6s1.4-2.8,1.4-4.8c0-2.9-0.8-5-2.4-6.4c-1.6-1.3-4.2-2-7.6-2c-2.9,0-5.9,0.3-9.1,1c-3.2,0.7-6.3,1.5-9.5,2.5s-6.5,2.1-9.7,3.3v-6.2c2.3-1.2,5-2.5,8-3.7s6.4-2.2,10-3s7.3-1.2,11-1.2c6,0,10.5,1.3,13.6,3.8s4.6,6.5,4.6,11.8c0,3.7-0.8,6.7-2.4,8.9c-1.6,2.3-3.9,3.9-7,5C268.1,286.9,264.5,287.4,260.3,287.4z"/>
+          <path d="M331.6,260.1c-4.3-2.5-10.9-3.8-19.8-3.8c-8.8,0-15.4,1.2-19.7,3.8c-4.3,2.5-6.4,6.6-6.4,12.1s2.1,9.6,6.4,12.1c4.2,2.5,10.8,3.8,19.7,3.8s15.5-1.3,19.8-3.8c4.3-2.6,6.4-6.6,6.4-12.1S335.9,262.7,331.6,260.1z M327.4,277c-1,1.2-2.8,2.1-5.3,2.7c-2.5,0.5-5.9,0.8-10.3,0.8c-4.4,0-7.8-0.2-10.3-0.8c-2.5-0.6-4.2-1.5-5.3-2.7c-1.1-1.2-1.6-2.8-1.6-4.8s0.5-3.6,1.6-4.8c1-1.2,2.8-2.1,5.3-2.7c2.5-0.5,5.9-0.8,10.3-0.8c4.3,0,7.8,0.2,10.3,0.8s4.2,1.5,5.3,2.7s1.6,2.8,1.6,4.8S328.5,275.8,327.4,277z"/>
+          <polygon points="344.4,287.4 344.4,257.1 352.3,257.1 353.4,264 353.4,287.4 "/>
+          <path d="M391.4,270.8v16.6h-9v-15.3c0-1.8-0.4-3.3-1.1-4.5c-0.8-1.2-1.9-2.1-3.6-2.8c-1.7-0.7-3.7-0.9-6.3-0.9c-3.4,0-7.3,0.5-11.8,1.6c-4.5,1-9.2,2.5-14.2,4.3v-5.3c1.8-0.9,3.7-1.9,5.9-2.8c2.2-1,4.5-1.8,7-2.6c2.5-0.8,5.1-1.4,7.8-2c2.7-0.5,5.4-0.8,8.2-0.8c3.7,0,6.8,0.5,9.3,1.5s4.5,2.5,5.8,4.7C390.7,264.7,391.4,267.3,391.4,270.8z"/>
+          <rect x="398.4" y="244.3" width="8.9" height="8.7"/>
+          <rect x="398.3" y="257.1" width="8.9" height="30.3"/>
+          <polygon points="424.1,287.4 411.5,287.4 435.3,270.2 436.4,269.5 453.9,257.1 466.5,257.1 443.2,273.7 442.2,274.3 "/>
+          <polygon points="442.5,269.8 443,270.2 467,287.4 454.2,287.4 436.1,274.4 435.4,273.9 411.6,257.2 424.4,257.2 "/>
+          </svg>
+        </div>
+      </a>
     </div>
   </footer>
 
